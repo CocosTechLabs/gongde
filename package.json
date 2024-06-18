@@ -1,0 +1,12 @@
+{
+  "name": "ton",
+  "uuid": "32fff7e1-3048-409e-aac6-d68497c3cd61",
+  "creator": {
+    "version": "3.8.3"
+  },
+  "dependencies": {
+    "@ton/phaser-sdk": "^0.0.1-beta.0",
+    "@ton/ton": "^13.11.2",
+    "@tonconnect/ui": "^2.0.5"
+  }
+}
