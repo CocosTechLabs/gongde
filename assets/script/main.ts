@@ -1,4 +1,6 @@
 import { _decorator, Animation, AnimationClip, AnimationComponent, AnimationState, Component, Input, input, Node } from 'cc';
+import { TGameSDK } from './lib/tgame';
+// import { TGameSDK } from './lib/tgame';
 const { ccclass, property } = _decorator;
 @ccclass('Main')
 export class Main extends Component {
@@ -7,6 +9,9 @@ export class Main extends Component {
 
     start() {
         this.ani.play("idle");
+        let tgame =  new TGameSDK();
+        tgame.init();
+        
     }
 
     protected onEnable(): void {
