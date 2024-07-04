@@ -18,6 +18,7 @@
   "dependencies": {
     "@ton/phaser-sdk": "^0.0.1-beta.0",
     "buffer": "^6.0.3",
+    "phaser": "^3.60.0",
     "typescript-declaration-webpack-plugin": "^0.3.0"
   }
 }

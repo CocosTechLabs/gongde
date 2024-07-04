@@ -9,6 +9,10 @@
     {
       "app_id": "UNKNOW",
       "config_id": "893015"
+    },
+    {
+      "app_id": "605316465",
+      "config_id": "a17114"
     }
   ],
   "configs": [
@@ -17,7 +21,71 @@
       "config_id": "893015",
       "config_name": "Default",
       "config_remarks": "",
-      "services": []
+      "services": [
+        {
+          "service_id": "302",
+          "enable": false,
+          "param": {}
+        }
+      ]
+    },
+    {
+      "app_id": "605316465",
+      "config_id": "a17114",
+      "config_name": "Default",
+      "config_remarks": "",
+      "services": [
+        {
+          "service_id": "302",
+          "enable": true,
+          "param": {}
+        },
+        {
+          "service_id": "301",
+          "enable": false,
+          "param": {}
+        },
+        {
+          "service_id": "550",
+          "enable": false,
+          "param": {}
+        },
+        {
+          "service_id": "350",
+          "enable": true,
+          "param": {}
+        },
+        {
+          "service_id": "352",
+          "enable": false,
+          "param": {}
+        },
+        {
+          "service_id": "353",
+          "enable": false,
+          "param": {}
+        },
+        {
+          "service_id": "354",
+          "enable": false,
+          "param": {}
+        },
+        {
+          "service_id": "355",
+          "enable": true,
+          "param": {}
+        },
+        {
+          "service_id": "308",
+          "enable": true,
+          "param": {}
+        },
+        {
+          "service_id": "312",
+          "enable": true,
+          "param": {}
+        }
+      ]
     }
   ]
 }

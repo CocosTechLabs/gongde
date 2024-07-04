@@ -1,7 +1,9 @@
-import { TonClient } from "@ton/ton";
+import { GameFi, Address, TonClient4 } from "@ton/phaser-sdk";
 export class TGameSDK {
-    public init() {
-        console.log("TGameSDK",TonClient)
+    public async init() {
+        console.log(GameFi)
+        const gameFi = await GameFi.create()
+        console.log(gameFi)
     }
 
 }

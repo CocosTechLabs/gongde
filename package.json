@@ -5,8 +5,8 @@
     "version": "3.8.3"
   },
   "dependencies": {
-    "@ton/phaser-sdk": "^0.0.1-beta.0",
-    "@ton/ton": "^13.11.2",
-    "@tonconnect/ui": "^2.0.5"
+    "@cocos-labs/game-sdk": "^0.0.4",
+    "buffer": "^6.0.3",
+    "Buffer": "^0.0.0"
   }
 }

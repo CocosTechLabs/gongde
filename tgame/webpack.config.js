@@ -21,7 +21,7 @@ module.exports = {
   },
   output: {
     filename: 'tgame.ts',  // 输出文件名
-    path: path.resolve(__dirname, 'dist'),  // 输出目录
+    path: path.resolve(__dirname, '../assets/script/lib'),  // 输出目录
     libraryTarget: 'module',
   },
   experiments: {
@@ -32,6 +32,7 @@ module.exports = {
   plugins: [
     new webpack.ProvidePlugin({
       Buffer: ['buffer', 'Buffer'],
+      Phaser: 'phaser'
     }),
     new TypescriptDeclarationPlugin({
         out: 'tgame.d.ts', // 输出的声明文件名
