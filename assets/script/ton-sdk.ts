@@ -216,7 +216,7 @@ export class TonSDK {
         let res = await config.json()
         console.log("config : ", res);
         if (res.ok) {
-            TelegramWebApp.Instace.openInvoice(res.invoiceLink, (result) => {
+            TelegramWebApp.Instance.openInvoice(res.invoiceLink, (result) => {
                 console.log("buy stars : ", result);
             });
         } else {
@@ -231,6 +231,10 @@ export class TonSDK {
         console.log("openJetton", openJetton)
 
         return await openJetton.getContent()   
+    }
+
+    public getUserInfo() {
+        return TelegramWebApp.Instance.getTelegramUser();
     }
     
  
