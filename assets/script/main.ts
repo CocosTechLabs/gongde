@@ -89,7 +89,7 @@ export class Main extends Component {
     public async onBtnShopClick() {
         this.shopNode.active = true;
         console.log("await this._tonsdk.showJetton")
-        this.jettonLabel.string = "await this._tonsdk.showJetton"
+        // this.jettonLabel.string = "await this._tonsdk.showJetton"
         const jettonContent = await this._tonsdk.showJetton();
         console.log(jettonContent)
         this.jettonLabel.string = jettonContent.name + ": " + jettonContent.decimals
