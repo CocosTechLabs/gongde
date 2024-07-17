@@ -19,6 +19,7 @@ This is an example of a game developed on the Ton chain using the Cocos game eng
 ## Get started
 ### client 
 Import using cocos creator 3.8.3
+$ npm install
 Build option configuration
     `Target Environments` > 0.5
 
