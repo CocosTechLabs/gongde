@@ -8,7 +8,7 @@ const { ccclass, property } = _decorator;
 @ccclass('TonSDK')
 export class TonSDK {
     private static SERVER_DEBUG_URL: string = "http://127.0.0.1:3000";
-    private static SERVER_RELEASE_URL: string = "https://muyu.bolinjoy.com/server";
+    private static SERVER_RELEASE_URL: string = "https://gongde.forgeheroes.com/api";
     private static _instance: TonSDK = null;
     private _cocosGameFi: CocosGameFi;
     private _tonAddress: string = "";

@@ -5,8 +5,8 @@
     "version": "3.8.3"
   },
   "dependencies": {
-    "@cocos-labs/game-sdk": "^0.0.4",
-    "buffer": "^6.0.3",
-    "Buffer": "^0.0.0"
+    "@ton/cocos-sdk": "0.0.1-beta.1",
+    "Buffer": "^0.0.0",
+    "buffer": "^6.0.3"
   }
 }
