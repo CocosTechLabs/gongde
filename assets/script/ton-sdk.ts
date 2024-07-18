@@ -1,7 +1,6 @@
 import { _decorator, Component, Node, profiler, sys } from 'cc';
-import { CocosGameFi, Address, toNano, TonConnectUI } from '@cocos-labs/game-sdk';
-import { GameFiInitializationParams, TonTransferRequest } from '@cocos-labs/game-sdk/lib/common/game-fi';
 import { TelegramWebApp } from '../cocos-telegram-miniapps/scripts/telegram-web';
+import { Address, GameFi, GameFiInitializationParams, toNano, TonConnectUI, TonTransferRequest } from '@ton/cocos-sdk';
 
 
 const { ccclass, property } = _decorator;
@@ -10,7 +9,7 @@ export class TonSDK {
     private static SERVER_DEBUG_URL: string = "http://127.0.0.1:3000";
     private static SERVER_RELEASE_URL: string = "https://gongde.forgeheroes.com/api";
     private static _instance: TonSDK = null;
-    private _cocosGameFi: CocosGameFi;
+    private _cocosGameFi: GameFi;
     private _tonAddress: string = "";
     private _jettonAddress: string = "";
     private _connectUI: TonConnectUI;
@@ -51,7 +50,7 @@ export class TonSDK {
                     jettonAddress: this._jettonAddress
                 }
             }
-            this._cocosGameFi = await CocosGameFi.create(params);
+            this._cocosGameFi = await GameFi.create(params);
             this._connectUI = this._cocosGameFi.walletConnector;
             this._tgWebApp =  TelegramWebApp.Instance;
 
